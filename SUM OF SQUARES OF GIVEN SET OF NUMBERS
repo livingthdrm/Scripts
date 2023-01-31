@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Initialize sumOfSquares to 0
+sumOfSquares=0
+
+# Input a number
+echo "Enter a number: "
+read num
+
+# Keep adding the squares of numbers until a negative number is encountered
+while [ $num -ge 0 ]; do
+    square=$((num * num))
+    sumOfSquares=$((sumOfSquares + square))
+    echo "Enter a number: "
+    read num
+done
+
+# Output the sum of squares
+echo "Sum of squares: $sumOfSquares"
