@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Initialize sum to 0
+sum=0
+
+# Input a number
+echo "Enter a number: "
+read num
+
+# Keep adding numbers until a negative number is encountered
+while [ $num -ge 0 ]; do
+	sum=$((sum + num))
+	echo "Enter a number: "
+	read num
+done
+
+# Output the running sum
+echo "Running sum: $sum"
